@@ -35,19 +35,19 @@ nav ul li a:hover {
 }
 
 main {
-    display: flex;
+    /* display: flex; */ /* Removed for primitive display */
     padding: 1rem;
 }
 
 section {
-    flex: 2;
+    /* flex: 2; */ /* Removed for primitive display */
     background-color: white;
     padding: 1rem;
-    margin-right: 1rem;
+    margin-bottom: 1rem; /* Add margin for separation */
 }
 
 aside {
-    flex: 1;
+    /* flex: 1; */ /* Removed for primitive display */
     background-color: #e9e9e9;
     padding: 1rem;
 }
@@ -57,7 +57,73 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    /* position: fixed; */ /* Removed for primitive display */
+    /* bottom: 0; */
+    /* width: 100%; */
+}
+
+/* Classes de base */
+
+/* a. Classe pour une bordure de 3 pixels noire */
+.border-black {
+    border: 3px solid black;
+}
+
+/* b. Classe pour une couleur d'écriture bleue */
+.text-blue {
+    color: blue;
+}
+
+/* c. Classe pour une marge intérieure de 10px (padding) */
+.padding-10 {
+    padding: 10px;
+}
+
+/* d. Classe pour une marge extérieure de 20px (margin) */
+.margin-20 {
+    margin: 20px;
+}
+
+/* Combinaisons de classes */
+
+/* f. Élément de type block avec bordure, marge intérieure et largeur 200px */
+.block-with-border {
+    display: block;
+    border: 3px solid black;
+    padding: 10px;
+    width: 200px;
+    background-color: #fff;
+}
+
+/* g. Élément de type inline avec couleur d'écriture rouge */
+.inline-red-text {
+    display: inline;
+    color: red;
+}
+
+/* h. Élément de type inline avec couleur d'écriture bleu */
+.inline-blue-text {
+    display: inline;
+    color: blue;
+}
+
+/* i. Élément de type block utilisant toutes les classes */
+.block-all {
+    display: block;
+    border: 3px solid black;
+    color: blue;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* j. Style générique pour toutes les balises p */
+p {
+    color: yellow;
+    background-color: lightgray;
+}
+
+/* k. Style pour toutes les balises span d'un div avec id mondiv */
+#mondiv span {
+    color: red;
+    font-weight: bold;
 }
